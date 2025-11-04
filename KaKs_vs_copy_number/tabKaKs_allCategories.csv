@@ -1,0 +1,684 @@
+Process,Orthogroup_ID,ration Ka/Ks,Selection,hit_desc,Pfam_desc,IPR_desc
+AA_metabolism,OG0000691,1,neutre,Betaine--homocysteine_S-methyltransferase_1,Homocysteine S-methyltransferase,"Homocysteine-binding domain|Betaine-homocysteine S-methyltransferase, BHMT|Homocysteine-binding domain superfamily"
+AA_metabolism,OG0000691,1,neutre,Betaine--homocysteine_S-methyltransferase_1,Homocysteine S-methyltransferase,"Homocysteine-binding domain|Betaine-homocysteine S-methyltransferase, BHMT|Homocysteine-binding domain superfamily"
+AA_metabolism,OG0000691,"0,184980773",conserve,Betaine--homocysteine_S-methyltransferase_1,Homocysteine S-methyltransferase,"Homocysteine-binding domain|Betaine-homocysteine S-methyltransferase, BHMT|Homocysteine-binding domain superfamily"
+AA_metabolism,OG0000735,1,neutre,Alpha/beta_hydrolase_fold-3_domain-containing_protein,alpha/beta hydrolase fold,Alpha/Beta hydrolase fold
+AA_metabolism,OG0000735,1,neutre,Alpha/beta_hydrolase_fold-3_domain-containing_protein,alpha/beta hydrolase fold,Alpha/Beta hydrolase fold
+AA_metabolism,OG0000735,"0,37654136",conserve,Alpha/beta_hydrolase_fold-3_domain-containing_protein,alpha/beta hydrolase fold,Alpha/Beta hydrolase fold
+AA_metabolism,OG0000735,"0,2771046882",conserve,Alpha/beta_hydrolase_fold-3_domain-containing_protein,alpha/beta hydrolase fold,Alpha/Beta hydrolase fold
+AA_metabolism,OG0000735,"0,2424051037",conserve,Alpha/beta_hydrolase_fold-3_domain-containing_protein,alpha/beta hydrolase fold,Alpha/Beta hydrolase fold
+AA_metabolism,OG0000735,"0,1853956701",conserve,Alpha/beta_hydrolase_fold-3_domain-containing_protein,alpha/beta hydrolase fold,Alpha/Beta hydrolase fold
+AA_metabolism,OG0000754,1,neutre,Glutamine_synthetase,"Glutamine synthetase, beta-Grasp domain|Glutamine synthetase, catalytic domain","Glutamine synthetase, catalytic domain|Glutamine synthetase/guanido kinase, catalytic domain|Glutamine synthetase, N-terminal conserved site|Glutamine synthetase, glycine-rich site|Glutamine synthetase, N-terminal domain superfamily"
+AA_metabolism,OG0000928,"0,255673114",conserve,"Probable_glutamate--tRNA_ligase,_mitochondrial","FAD binding domain in molybdopterin dehydrogenase|CO dehydrogenase flavoprotein C-terminal domain|Aldehyde oxidase and xanthine dehydrogenase, a/b hammerhead domain|[2Fe-2S] binding domain|Molybdopterin-binding domain of aldehyde dehydrogenase","Aldehyde oxidase/xanthine dehydrogenase, a/b hammerhead|CO dehydrogenase flavoprotein, C-terminal|2Fe-2S ferredoxin, iron-sulphur binding site|Beta-grasp domain superfamily|FAD-binding domain, PCMH-type|FAD-binding, type PCMH, subdomain 1|FAD-binding, type PCMH, subdomain 2|Aldehyde oxidase/xanthine dehydrogenase-like|2Fe-2S ferredoxin-like superfamily|FAD-binding, type PCMH-like superfamily|CO dehydrogenase flavoprotein, C-terminal domain superfamily|Aldehyde oxidase/xanthine dehydrogenase, a/b hammerhead superfamily|[2Fe-2S]-binding domain superfamily|Aldehyde oxidase/xanthine dehydrogenase, molybdopterin binding domain superfamily"
+AA_metabolism,OG0000937,1,neutre,S-adenosylmethionine_synthase,"S-adenosylmethionine synthetase, N-terminal domain|S-adenosylmethionine synthetase, C-terminal domain|S-adenosylmethionine synthetase, central domain","S-adenosylmethionine synthetase|S-adenosylmethionine synthetase, conserved site|S-adenosylmethionine synthetase superfamily"
+AA_metabolism,OG0001202,"0,1891399305",conserve,glutamate_dehydrogenase_[NAD(P)(+)]_(Fragment),"Glutamate/Leucine/Phenylalanine/Valine dehydrogenase|Glu/Leu/Phe/Val dehydrogenase, dimerisation domain","Glutamate/phenylalanine/leucine/valine/L-tryptophan dehydrogenase|Glutamate/phenylalanine/leucine/valine/L-tryptophan dehydrogenase, C-terminal|Leu/Phe/Val dehydrogenases active site|NAD(P) binding domain of glutamate dehydrogenase|NAD(P)-binding domain superfamily"
+AA_metabolism,OG0002185,1,neutre,3-hydroxyacyl-CoA_dehydrogenase,"3-hydroxyacyl-CoA dehydrogenase, NAD binding domain|3-hydroxyacyl-CoA dehydrogenase, C-terminal domain","3-hydroxyacyl-CoA dehydrogenase, conserved site|6-phosphogluconate dehydrogenase-like, C-terminal domain superfamily|6-phosphogluconate dehydrogenase, domain 2|3-hydroxyacyl-CoA dehydrogenase|NAD(P)-binding domain superfamily"
+AA_metabolism,OG0002185,1,neutre,3-hydroxyacyl-CoA_dehydrogenase,"3-hydroxyacyl-CoA dehydrogenase, NAD binding domain|3-hydroxyacyl-CoA dehydrogenase, C-terminal domain","3-hydroxyacyl-CoA dehydrogenase, conserved site|6-phosphogluconate dehydrogenase-like, C-terminal domain superfamily|6-phosphogluconate dehydrogenase, domain 2|3-hydroxyacyl-CoA dehydrogenase|NAD(P)-binding domain superfamily"
+AA_metabolism,OG0002185,1,neutre,3-hydroxyacyl-CoA_dehydrogenase,"3-hydroxyacyl-CoA dehydrogenase, NAD binding domain|3-hydroxyacyl-CoA dehydrogenase, C-terminal domain","3-hydroxyacyl-CoA dehydrogenase, conserved site|6-phosphogluconate dehydrogenase-like, C-terminal domain superfamily|6-phosphogluconate dehydrogenase, domain 2|3-hydroxyacyl-CoA dehydrogenase|NAD(P)-binding domain superfamily"
+AA_metabolism,OG0002185,1,neutre,3-hydroxyacyl-CoA_dehydrogenase,"3-hydroxyacyl-CoA dehydrogenase, NAD binding domain|3-hydroxyacyl-CoA dehydrogenase, C-terminal domain","3-hydroxyacyl-CoA dehydrogenase, conserved site|6-phosphogluconate dehydrogenase-like, C-terminal domain superfamily|6-phosphogluconate dehydrogenase, domain 2|3-hydroxyacyl-CoA dehydrogenase|NAD(P)-binding domain superfamily"
+AA_metabolism,OG0002185,"0,2687912805",conserve,3-hydroxyacyl-CoA_dehydrogenase,"3-hydroxyacyl-CoA dehydrogenase, NAD binding domain|3-hydroxyacyl-CoA dehydrogenase, C-terminal domain","3-hydroxyacyl-CoA dehydrogenase, conserved site|6-phosphogluconate dehydrogenase-like, C-terminal domain superfamily|6-phosphogluconate dehydrogenase, domain 2|3-hydroxyacyl-CoA dehydrogenase|NAD(P)-binding domain superfamily"
+AA_metabolism,OG0002185,"0,2658831291",conserve,3-hydroxyacyl-CoA_dehydrogenase,"3-hydroxyacyl-CoA dehydrogenase, NAD binding domain|3-hydroxyacyl-CoA dehydrogenase, C-terminal domain","3-hydroxyacyl-CoA dehydrogenase, conserved site|6-phosphogluconate dehydrogenase-like, C-terminal domain superfamily|6-phosphogluconate dehydrogenase, domain 2|3-hydroxyacyl-CoA dehydrogenase|NAD(P)-binding domain superfamily"
+AA_metabolism,OG0002418,1,neutre,Branched-chain-amino-acid_aminotransferase_(Fragment),Amino-transferase class IV,"Branched-chain amino acid aminotransferase II|Aminotransferase, class IV, conserved site|Branched-chain aminotransferase|Aminotransferase-like, PLP-dependent enzymes|Branched-chain-amino-acid aminotransferase-like, N-terminal|Branched-chain-amino-acid aminotransferase-like, C-terminal"
+AA_metabolism,OG0003035,1,neutre,Glycine_cleavage_system_H_protein,Glycine cleavage H-protein,"Biotin/lipoyl attachment|Glycine cleavage system H-protein|2-oxo acid dehydrogenase, lipoyl-binding site|Single hybrid motif|Glycine cleavage system H-protein, subgroup|Glycine cleavage system H-protein/Simiate"
+AA_metabolism,OG0003874,"0,2057897341",conserve,Dihydropteridine_reductase,short chain dehydrogenase,"Short-chain dehydrogenase/reductase SDR|Short-chain dehydrogenase/reductase, conserved site|NAD(P)-binding domain superfamily"
+AA_metabolism,OG0003957,1,neutre,Isochorismatase-like_domain-containing_protein,Isochorismatase family,Isochorismatase-like superfamily
+AA_metabolism,OG0004640,"0,2294981417",conserve,Phosphoethanolamine_N-methyltransferase_3,Methyltransferase domain,S-adenosyl-L-methionine-dependent methyltransferase superfamily
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,"0,4628918433",conserve,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,"0,2988294263",conserve,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,"0,2763423866",conserve,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,"0,2647629003",conserve,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,"0,2343387391",conserve,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,"0,2153386758",conserve,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000011,"0,2055448857",conserve,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold|Endochitinase-like superfamily"
+Cuticule,OG0000047,1,neutre,(salmon_louse)_hypothetical_protein,Chitin binding Peritrophin-A domain,Chitin binding domain|Chitin binding domain superfamily
+Cuticule,OG0004845,1,neutre,Cbd-1,Chitin binding Peritrophin-A domain|Chitin binding Peritrophin-A domain|Chitin binding Peritrophin-A domain,Chitin binding domain|Chitin binding domain superfamily
+Cuticule,OG0004845,1,neutre,Cbd-1,Chitin binding Peritrophin-A domain|Chitin binding Peritrophin-A domain|Chitin binding Peritrophin-A domain,Chitin binding domain|Chitin binding domain superfamily
+Cuticule,OG0004845,"0,2242997086",conserve,Cbd-1,Chitin binding Peritrophin-A domain|Chitin binding Peritrophin-A domain|Chitin binding Peritrophin-A domain,Chitin binding domain|Chitin binding domain superfamily
+CytoSk,OG0000017,"0,2813857289",conserve,Myosin_motor_domain-containing_protein_(Fragment),Myosin tail,"DNA repair protein XRCC4-like, C-terminal"
+CytoSk,OG0000055,1,neutre,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,1,neutre,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,1,neutre,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,1,neutre,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,1,neutre,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,1,neutre,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,1,neutre,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,"0,2839354481",conserve,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,"0,2430954799",conserve,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,"0,2315113166",conserve,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,"0,2315033007",conserve,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,"0,207191945",conserve,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,"0,1841631989",conserve,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,"0,1756445432",conserve,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000055,"0,1725049168",conserve,"Calmodulin_3b_(Phosphorylase_kinase,_delta)",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|"
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,1,neutre,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,"0,2270897386",conserve,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000274,"0,2024612454",conserve,Troponin_T_(Fragment),Troponin,Troponin T|Troponin domain superfamily
+CytoSk,OG0000781,"2,644082598",positive,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"1,171967685",neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"1,135497897",neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,1,neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,8990680448",neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,8990680448",neutre,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,4357153776",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3451754205",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3413052439",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3413052439",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3413052439",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3413052439",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3368206123",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3095761135",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3095761135",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,3028236782",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,291961266",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2900805751",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2745417909",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2695813083",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2695813083",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2530751565",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2407618366",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2395746673",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2337538314",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2337538314",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2268720991",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2268720991",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2265998933",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2265100899",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2254616454",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2225211435",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2151432212",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2147080305",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2045011581",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2030075833",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2030075833",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,2002002994",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,1914601498",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,1896569195",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000781,"0,06687730917",conserve,-,-,Actin-crosslinking|Kelch-type beta propeller
+CytoSk,OG0000917,1,neutre,"Troponin_C,_isoform_1",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site"
+CytoSk,OG0000917,1,neutre,"Troponin_C,_isoform_1",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site"
+CytoSk,OG0000917,1,neutre,"Troponin_C,_isoform_1",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site"
+CytoSk,OG0000917,1,neutre,"Troponin_C,_isoform_1",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site"
+CytoSk,OG0000917,"0,2016734321",conserve,"Troponin_C,_isoform_1",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site"
+CytoSk,OG0000917,"0,1946147982",conserve,"Troponin_C,_isoform_1",EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site"
+CytoSk,OG0001052,1,neutre,Putative_LOC100120906_[Nasonia_vitripennis],Myofilin,-
+CytoSk,OG0001564,1,neutre,Calponin-homology_(CH)_domain-containing_protein,Calponin homology (CH) domain,Calponin homology domain|CH domain superfamily
+DvpCtrl,OG0000242,1,neutre,Neuronal_calcium_sensor_2like_[Ceratitis_capitata]_(Fragment),EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|Recoverin family"
+DvpCtrl,OG0000242,1,neutre,Neuronal_calcium_sensor_2like_[Ceratitis_capitata]_(Fragment),EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|Recoverin family"
+DvpCtrl,OG0000242,"0,2529809027",conserve,Neuronal_calcium_sensor_2like_[Ceratitis_capitata]_(Fragment),EF-hand domain pair|EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|Recoverin family"
+DvpCtrl,OG0001787,1,neutre,Hemolymph_juvenile_hormone_binding_protein,Haemolymph juvenile hormone binding protein (JHBP),Haemolymph juvenile hormone binding|Takeout superfamily
+DvpCtrl,OG0003588,"0,2309658952",conserve,Putative_LDLR_chaperone_boca_(Fragment),Chaperone for wingless signalling and trafficking of LDL receptor,LRP chaperone MESD
+ECM,OG0000186,"0,2877500739",conserve,Fibrocystin-L-like_isoform_X2,G8 domain,Parallel beta-helix repeat|Pectin lyase fold/virulence factor|G8 domain
+ECM,OG0000501,1,neutre,EH_domain-containing_protein_1_isoform_X1,Domain of unknown function (DUF5600)|N-terminal EH-domain containing protein|Cytoskeletal-regulatory complex EF hand|Dynamin family,"EH domain|EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|P-loop containing nucleoside triphosphate hydrolase||Dynamin-type guanine nucleotide-binding (G) domain"
+ECM,OG0001312,1,neutre,Carbohydrate_sulfotransferase_1-like_4,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+ECM,OG0001312,1,neutre,Carbohydrate_sulfotransferase_1-like_4,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+ECM,OG0001312,"0,2279268148",conserve,Carbohydrate_sulfotransferase_1-like_4,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+ECM,OG0002364,1,neutre,GH16_domain-containing_protein,Glycosyl hydrolases family 16,Glycoside hydrolase family 16|Concanavalin A-like lectin/glucanase domain superfamily
+ECM,OG0003710,1,neutre,Fibrillar_collagen_NC1_domain-containing_protein,Fibrillar collagen C-terminal domain|Collagen triple helix repeat (20 copies)|Collagen triple helix repeat (20 copies)|Collagen triple helix repeat (20 copies),"Fibrillar collagen, C-terminal"
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,6903354139",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,3158668443",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,31069302",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,2916190006",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,2855552457",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,2687217206",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,2676876243",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,2522757455",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,2492002779",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,233393581",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000025,"0,1932061681",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000071,1,neutre,Fibrinogen_C-terminal_domain-containing_protein,"Fibrinogen beta and gamma chains, C-terminal globular domain","Fibrinogen, alpha/beta/gamma chain, C-terminal globular domain|Fibrinogen, alpha/beta/gamma chain, C-terminal globular, subdomain 1|Fibrinogen, conserved site|Fibrinogen-like, C-terminal"
+ImmuneSystem,OG0000071,1,neutre,Fibrinogen_C-terminal_domain-containing_protein,"Fibrinogen beta and gamma chains, C-terminal globular domain","Fibrinogen, alpha/beta/gamma chain, C-terminal globular domain|Fibrinogen, alpha/beta/gamma chain, C-terminal globular, subdomain 1|Fibrinogen, conserved site|Fibrinogen-like, C-terminal"
+ImmuneSystem,OG0000071,1,neutre,Fibrinogen_C-terminal_domain-containing_protein,"Fibrinogen beta and gamma chains, C-terminal globular domain","Fibrinogen, alpha/beta/gamma chain, C-terminal globular domain|Fibrinogen, alpha/beta/gamma chain, C-terminal globular, subdomain 1|Fibrinogen, conserved site|Fibrinogen-like, C-terminal"
+ImmuneSystem,OG0000071,1,neutre,Fibrinogen_C-terminal_domain-containing_protein,"Fibrinogen beta and gamma chains, C-terminal globular domain","Fibrinogen, alpha/beta/gamma chain, C-terminal globular domain|Fibrinogen, alpha/beta/gamma chain, C-terminal globular, subdomain 1|Fibrinogen, conserved site|Fibrinogen-like, C-terminal"
+ImmuneSystem,OG0000071,1,neutre,Fibrinogen_C-terminal_domain-containing_protein,"Fibrinogen beta and gamma chains, C-terminal globular domain","Fibrinogen, alpha/beta/gamma chain, C-terminal globular domain|Fibrinogen, alpha/beta/gamma chain, C-terminal globular, subdomain 1|Fibrinogen, conserved site|Fibrinogen-like, C-terminal"
+ImmuneSystem,OG0000071,"0,4430261363",conserve,Fibrinogen_C-terminal_domain-containing_protein,"Fibrinogen beta and gamma chains, C-terminal globular domain","Fibrinogen, alpha/beta/gamma chain, C-terminal globular domain|Fibrinogen, alpha/beta/gamma chain, C-terminal globular, subdomain 1|Fibrinogen, conserved site|Fibrinogen-like, C-terminal"
+ImmuneSystem,OG0000085,"5,118154303",positive,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,1,neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,9440331392",neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,8863454925",neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,8582710953",neutre,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,2815582005",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,2687800829",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,244638575",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,2436844609",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,2264729451",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,2158244272",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,2100673935",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,1981921168",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,183462351",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,1818932575",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,1608113544",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000085,"0,08687931366",conserve,Macrophage_mannose_receptor_1,Lectin C-type domain,"C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold|C-type lectin, conserved site"
+ImmuneSystem,OG0000196,1,neutre,Macrophage_mannose_receptor_1-like,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0000196,1,neutre,Macrophage_mannose_receptor_1-like,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0000196,"0,2466786249",conserve,Macrophage_mannose_receptor_1-like,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0000478,1,neutre,C-type_lectin_domain-containing_protein,-,Phospholipase A2 domain superfamily
+ImmuneSystem,OG0000478,1,neutre,C-type_lectin_domain-containing_protein,-,Phospholipase A2 domain superfamily
+ImmuneSystem,OG0000478,1,neutre,C-type_lectin_domain-containing_protein,-,Phospholipase A2 domain superfamily
+ImmuneSystem,OG0000478,"0,207876369",conserve,C-type_lectin_domain-containing_protein,-,Phospholipase A2 domain superfamily
+ImmuneSystem,OG0000478,"0,1833921179",conserve,C-type_lectin_domain-containing_protein,-,Phospholipase A2 domain superfamily
+ImmuneSystem,OG0000478,"0,1795288299",conserve,C-type_lectin_domain-containing_protein,-,Phospholipase A2 domain superfamily
+ImmuneSystem,OG0000818,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000818,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000818,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000818,1,neutre,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000818,"0,2218513414",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0000818,"0,1631004919",conserve,-,-,Tumour necrosis factor-like domain superfamily
+ImmuneSystem,OG0001101,1,neutre,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,1,neutre,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,1,neutre,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,1,neutre,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,1,neutre,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,"0,2397660452",conserve,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,"0,2394897391",conserve,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,"0,1931511348",conserve,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,"0,1768881126",conserve,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001101,"0,1026755206",conserve,Perlucin_5-like_protein,Lectin C-type domain,C-type lectin-like|C-type lectin-like/link domain superfamily|C-type lectin fold
+ImmuneSystem,OG0001400,1,neutre,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,1,neutre,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,1,neutre,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,1,neutre,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,1,neutre,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,"0,2449963295",conserve,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,"0,2436723181",conserve,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,"0,2171302491",conserve,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,"0,2113784568",conserve,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0001400,"0,2032461891",conserve,MD-2-related_lipid-recognition_domain-containing_protein_(Fragment),ML domain,"Ganglioside GM2 activator|GM2-AP, lipid-recognition domain superfamily"
+ImmuneSystem,OG0002004,1,neutre,Jacalin-type_lectin_domain-containing_protein_(Fragment),Jacalin-like lectin domain,Jacalin-like lectin domain||Jacalin-like lectin domain superfamily
+ImmuneSystem,OG0002004,1,neutre,Jacalin-type_lectin_domain-containing_protein_(Fragment),Jacalin-like lectin domain,Jacalin-like lectin domain||Jacalin-like lectin domain superfamily
+ImmuneSystem,OG0002004,1,neutre,Jacalin-type_lectin_domain-containing_protein_(Fragment),Jacalin-like lectin domain,Jacalin-like lectin domain||Jacalin-like lectin domain superfamily
+Lipid_metabolism,OG0000151,1,neutre,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,1,neutre,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,1,neutre,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,1,neutre,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,1,neutre,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,"0,4135655088",conserve,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,"0,327282318",conserve,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,"0,2988760906",conserve,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,"0,2282161735",conserve,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000151,"0,2225899768",conserve,Saposin_B-type_domain-containing_protein,-,Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,1,neutre,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,"0,261055087",conserve,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,"0,2579551899",conserve,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,"0,2527671873",conserve,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,"0,2367366053",conserve,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,"0,2163720528",conserve,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000221,"0,2126104101",conserve,Partial_AB-hydrolase_lipase_domain-containing_protein,"Serine aminopeptidase, S33|Partial alpha/beta-hydrolase lipase region","Lipase, eukaryotic|Alpha/Beta hydrolase fold"
+Lipid_metabolism,OG0000248,"2,032398797",positive,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,1,neutre,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,"0,7940901086",conserve,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,"0,2093202592",conserve,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,"0,1930242055",conserve,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,"0,1654765672",conserve,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000248,"0,1628357314",conserve,Putative_proactivator_polypeptide,"Saposin-like type B, region 1",Saposin B type domain|Saposin-like
+Lipid_metabolism,OG0000328,1,neutre,Elongation_of_very_long_chain_fatty_acids_protein_(Fragment),GNS1/SUR4 family,ELO family
+Lipid_metabolism,OG0000328,1,neutre,Elongation_of_very_long_chain_fatty_acids_protein_(Fragment),GNS1/SUR4 family,ELO family
+Lipid_metabolism,OG0000328,1,neutre,Elongation_of_very_long_chain_fatty_acids_protein_(Fragment),GNS1/SUR4 family,ELO family
+Lipid_metabolism,OG0000384,1,neutre,Adipose_triglyceride_lipase_(Fragment),-,Patatin-like phospholipase domain|Acyl transferase/acyl hydrolase/lysophospholipase|Patatin-like phospholipase domain-containing protein
+Lipid_metabolism,OG0000384,"0,4053617066",conserve,Adipose_triglyceride_lipase_(Fragment),-,Patatin-like phospholipase domain|Acyl transferase/acyl hydrolase/lysophospholipase|Patatin-like phospholipase domain-containing protein
+Lipid_metabolism,OG0000384,"0,224923979",conserve,Adipose_triglyceride_lipase_(Fragment),-,Patatin-like phospholipase domain|Acyl transferase/acyl hydrolase/lysophospholipase|Patatin-like phospholipase domain-containing protein
+Lipid_metabolism,OG0000886,1,neutre,Monoacylglycerol_lipase_ABHD12,Alpha/beta hydrolase family,Alpha/Beta hydrolase fold
+Lipid_metabolism,OG0000886,1,neutre,Monoacylglycerol_lipase_ABHD12,Alpha/beta hydrolase family,Alpha/Beta hydrolase fold
+Lipid_metabolism,OG0000886,1,neutre,Monoacylglycerol_lipase_ABHD12,Alpha/beta hydrolase family,Alpha/Beta hydrolase fold
+Lipid_metabolism,OG0000886,1,neutre,Monoacylglycerol_lipase_ABHD12,Alpha/beta hydrolase family,Alpha/Beta hydrolase fold
+Lipid_metabolism,OG0000886,1,neutre,Monoacylglycerol_lipase_ABHD12,Alpha/beta hydrolase family,Alpha/Beta hydrolase fold
+Lipid_metabolism,OG0000886,1,neutre,Monoacylglycerol_lipase_ABHD12,Alpha/beta hydrolase family,Alpha/Beta hydrolase fold
+Lipid_metabolism,OG0002008,1,neutre,Elongation_of_very_long_chain_fatty_acids_protein,GNS1/SUR4 family,"ELO family|ELO family, conserved site"
+NucAcid_metabolism,OG0000855,"0,2252535069",conserve,Cytosolic_purine_5'-nucleotidase,5' nucleotidase family,"HAD-superfamily hydrolase, subfamily IG, 5'-nucleotidase|Purine 5'-nucleotidase|HAD superfamily|HAD-like superfamily"
+NucAcid_metabolism,OG0001124,1,neutre,Deoxynucleoside_triphosphate_triphosphohydrolase_SAMHD1_(Fragment),HD domain,HD/PDEase domain
+NucAcid_metabolism,OG0001362,1,neutre,Purine_nucleoside_phosphorylase_(Fragment),Phosphorylase superfamily,"Purine nucleoside phosphorylase|Purine nucleoside phosphorylase I, inosine/guanosine-specific|Purine phosphorylase, family 2, conserved site|Nucleoside phosphorylase superfamily"
+NucAcid_metabolism,OG0001362,1,neutre,Purine_nucleoside_phosphorylase_(Fragment),Phosphorylase superfamily,"Purine nucleoside phosphorylase|Purine nucleoside phosphorylase I, inosine/guanosine-specific|Purine phosphorylase, family 2, conserved site|Nucleoside phosphorylase superfamily"
+NucAcid_metabolism,OG0001362,"0,288578946",conserve,Purine_nucleoside_phosphorylase_(Fragment),Phosphorylase superfamily,"Purine nucleoside phosphorylase|Purine nucleoside phosphorylase I, inosine/guanosine-specific|Purine phosphorylase, family 2, conserved site|Nucleoside phosphorylase superfamily"
+NucAcid_metabolism,OG0002025,1,neutre,Adenosine_kinase,pfkB family carbohydrate kinase,"Adenosine kinase|Carbohydrate/purine kinase, PfkB, conserved site|Ribokinase-like"
+OS_response,OG0000023,1,neutre,CYP3039-3041A1-like_protein_2,Cytochrome P450,"Cytochrome P450|Cytochrome P450, E-class, group I|Cytochrome P450, conserved site|Cytochrome P450 superfamily"
+OS_response,OG0000023,1,neutre,CYP3039-3041A1-like_protein_2,Cytochrome P450,"Cytochrome P450|Cytochrome P450, E-class, group I|Cytochrome P450, conserved site|Cytochrome P450 superfamily"
+OS_response,OG0000023,1,neutre,CYP3039-3041A1-like_protein_2,Cytochrome P450,"Cytochrome P450|Cytochrome P450, E-class, group I|Cytochrome P450, conserved site|Cytochrome P450 superfamily"
+OS_response,OG0000023,1,neutre,CYP3039-3041A1-like_protein_2,Cytochrome P450,"Cytochrome P450|Cytochrome P450, E-class, group I|Cytochrome P450, conserved site|Cytochrome P450 superfamily"
+OS_response,OG0000023,"0,432679092",conserve,CYP3039-3041A1-like_protein_2,Cytochrome P450,"Cytochrome P450|Cytochrome P450, E-class, group I|Cytochrome P450, conserved site|Cytochrome P450 superfamily"
+OS_response,OG0000023,"0,2700776352",conserve,CYP3039-3041A1-like_protein_2,Cytochrome P450,"Cytochrome P450|Cytochrome P450, E-class, group I|Cytochrome P450, conserved site|Cytochrome P450 superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,1,neutre,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,3347761941",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,2962367716",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,2869425981",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,2368480502",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,2147465833",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,2100657372",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,2078646708",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,1770435315",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,1714326372",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,1641455519",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000119,"0,0960668265",conserve,GSTsigma3c,"Glutathione S-transferase, N-terminal domain|Glutathione S-transferase, C-terminal domain","Glutathione S-transferase, N-terminal|Glutathione S-transferase, C-terminal-like|Thioredoxin-like superfamily|Glutathione S-transferase, C-terminal domain superfamily"
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,1,neutre,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,"0,3114658287",conserve,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,"0,2550705766",conserve,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,"0,247768629",conserve,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000211,"0,232514439",conserve,Sulfotransferase_domain-containing_protein,Sulfotransferase domain,P-loop containing nucleoside triphosphate hydrolase
+OS_response,OG0000229,1,neutre,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,1,neutre,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,1,neutre,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,1,neutre,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,1,neutre,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,"0,2477674579",conserve,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,"0,2286063977",conserve,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,"0,2225607845",conserve,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,"0,2129895263",conserve,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000229,"0,1937832483",conserve,Uncharacterized_protein,short chain dehydrogenase,Short-chain dehydrogenase/reductase SDR|NAD(P)-binding domain superfamily
+OS_response,OG0000234,1,neutre,Heat_shock_protein_83,"Hsp90 protein|Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase","Heat shock protein Hsp90 family|Histidine kinase/HSP90-like ATPase|Heat shock protein Hsp90, conserved site|Ribosomal protein uS5 domain 2-type superfamily|Heat shock protein Hsp90, N-terminal|Histidine kinase/HSP90-like ATPase superfamily|HSP90, C-terminal domain"
+OS_response,OG0000292,1,neutre,J_domain-containing_protein,DnaJ domain,"DnaJ domain|DnaJ domain, conserved site|Chaperone J-domain superfamily"
+OS_response,OG0000292,1,neutre,J_domain-containing_protein,DnaJ domain,"DnaJ domain|DnaJ domain, conserved site|Chaperone J-domain superfamily"
+OS_response,OG0000292,1,neutre,J_domain-containing_protein,DnaJ domain,"DnaJ domain|DnaJ domain, conserved site|Chaperone J-domain superfamily"
+OS_response,OG0000292,1,neutre,J_domain-containing_protein,DnaJ domain,"DnaJ domain|DnaJ domain, conserved site|Chaperone J-domain superfamily"
+OS_response,OG0000292,1,neutre,J_domain-containing_protein,DnaJ domain,"DnaJ domain|DnaJ domain, conserved site|Chaperone J-domain superfamily"
+OS_response,OG0000292,"0,1806681011",conserve,J_domain-containing_protein,DnaJ domain,"DnaJ domain|DnaJ domain, conserved site|Chaperone J-domain superfamily"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,1,neutre,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,6439709224",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,4170643828",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,3147840534",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,309762839",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,285905093",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,2830314879",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,2133126936",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,2112650301",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,191486969",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,1873621159",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000530,"0,1790245404",conserve,mRNA_decay_activator_protein_ZFP36,Zinc finger C-x8-C-x5-C-x3-H type (and similar)|Zinc finger C-x8-C-x5-C-x3-H type (and similar),"Zinc finger, CCCH-type|Zinc finger, CCCH-type superfamily|RNA-binding protein ZFP36-like"
+OS_response,OG0000607,1,neutre,DM13_domain-containing_protein,Electron transfer DM13,DM13 domain
+OS_response,OG0000607,1,neutre,DM13_domain-containing_protein,Electron transfer DM13,DM13 domain
+OS_response,OG0000607,1,neutre,DM13_domain-containing_protein,Electron transfer DM13,DM13 domain
+OS_response,OG0000832,1,neutre,BZIP_domain-containing_protein,Basic region leucine zipper,Basic-leucine zipper domain||PAR basic leucine zipper protein
+OS_response,OG0000832,1,neutre,BZIP_domain-containing_protein,Basic region leucine zipper,Basic-leucine zipper domain||PAR basic leucine zipper protein
+OS_response,OG0000832,1,neutre,BZIP_domain-containing_protein,Basic region leucine zipper,Basic-leucine zipper domain||PAR basic leucine zipper protein
+OS_response,OG0000832,1,neutre,BZIP_domain-containing_protein,Basic region leucine zipper,Basic-leucine zipper domain||PAR basic leucine zipper protein
+OS_response,OG0000832,"0,226222384",conserve,BZIP_domain-containing_protein,Basic region leucine zipper,Basic-leucine zipper domain||PAR basic leucine zipper protein
+OS_response,OG0000832,"0,1870805515",conserve,BZIP_domain-containing_protein,Basic region leucine zipper,Basic-leucine zipper domain||PAR basic leucine zipper protein
+OS_response,OG0000877,1,neutre,Carboxylic_ester_hydrolase,Carboxylesterase family,"Carboxylesterase type B, active site|Alpha/Beta hydrolase fold"
+OS_response,OG0001153,"2,233659896",positive,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001153,1,neutre,Uncharacterized_protein,Sodium / potassium ATPase beta chain,Sodium/potassium-transporting ATPase subunit beta|Sodium/potassium-transporting ATPase subunit beta superfamily
+OS_response,OG0001361,1,neutre,Deltamethrin_resistance_protein_prag01_domain-containing_protein,Deltamethrin resistance,-
+OS_response,OG0001871,"0,3010361934",conserve,Uncharacterized_protein,DnaJ central domain|DnaJ C terminal domain,"Heat shock protein DnaJ, cysteine-rich domain|HSP40/DnaJ peptide-binding|Heat shock protein DnaJ, cysteine-rich domain superfamily|DnaJ homolog subfamily A member 1/2-like"
+OS_response,OG0001962,1,neutre,Flavin-containing_monooxygenase,Flavin-binding monooxygenase-like|Flavin-binding monooxygenase-like,Flavin monooxygenase FMO|FAD/NAD(P)-binding domain superfamily
+OS_response,OG0002039,1,neutre,MOSC_domain-containing_protein,MOSC N-terminal beta barrel domain|MOSC domain,"Molybdenum cofactor sulfurase, C-terminal|Pyruvate kinase-like, insert domain superfamily"
+OS_response,OG0003250,1,neutre,PABS_domain-containing_protein_(Fragment),Spermidine synthase tetramerisation domain|Spermine/spermidine synthase domain,"Spermidine/spermine synthases|Spermine synthase, animal|S-adenosyl-L-methionine-dependent methyltransferase superfamily|Polyamine biosynthesis domain, conserved site|Polyamine biosynthesis domain|Spermidine synthase, tetramerisation domain superfamily"
+OS_response,OG0004077,1,neutre,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,1,neutre,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,1,neutre,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,1,neutre,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,1,neutre,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,1,neutre,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,1,neutre,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,1,neutre,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,"0,6607515281",conserve,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0004077,"0,2366476988",conserve,glutathione_transferase,MAPEG family,Membrane associated eicosanoid/glutathione metabolism-like domain superfamily|Microsomal glutathione S-transferase 1-like
+OS_response,OG0006547,1,neutre,MBL_fold_metallo-hydrolase,Metallo-beta-lactamase superfamily,Metallo-beta-lactamase|Ribonuclease Z/Hydroxyacylglutathione hydrolase-like
+OS_response,OG0006547,1,neutre,MBL_fold_metallo-hydrolase,Metallo-beta-lactamase superfamily,Metallo-beta-lactamase|Ribonuclease Z/Hydroxyacylglutathione hydrolase-like
+OS_response,OG0006547,"0,4231344538",conserve,MBL_fold_metallo-hydrolase,Metallo-beta-lactamase superfamily,Metallo-beta-lactamase|Ribonuclease Z/Hydroxyacylglutathione hydrolase-like
+Proteolysis,OG0000013,1,neutre,Serine_protease_27-like,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000013,1,neutre,Serine_protease_27-like,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000013,"0,2371752256",conserve,Serine_protease_27-like,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000032,"0,2215479461",conserve,Serine_proteinase_stubblelike_[Bombus_impatiens],Serine protease Clip domain PPAF-2|Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000032,"0,2093859992",conserve,Serine_proteinase_stubblelike_[Bombus_impatiens],Serine protease Clip domain PPAF-2|Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000032,"0,2005716134",conserve,Serine_proteinase_stubblelike_[Bombus_impatiens],Serine protease Clip domain PPAF-2|Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,"1,168460864",neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,1,neutre,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,"0,3689049415",conserve,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,"0,2817681759",conserve,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,"0,2773265337",conserve,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,"0,260152583",conserve,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,"0,2540550894",conserve,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,"0,2232733571",conserve,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000142,"0,06889090372",conserve,Trypsin,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000258,1,neutre,Uncharacterized_protein,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000258,1,neutre,Uncharacterized_protein,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000258,"0,2052653413",conserve,Uncharacterized_protein,Trypsin,"Serine proteases, trypsin domain|Peptidase S1A, chymotrypsin family|Peptidase S1, PA clan|Serine proteases, trypsin family, histidine active site|Serine proteases, trypsin family, serine active site|Peptidase S1, PA clan, chymotrypsin-like fold"
+Proteolysis,OG0000613,1,neutre,Serine_carboxypeptidase_(Fragment),Serine carboxypeptidase,"Peptidase S10, serine carboxypeptidase|Alpha/Beta hydrolase fold|Serine carboxypeptidases, histidine active site"
+Proteolysis,OG0000637,1,neutre,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,1,neutre,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,1,neutre,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,1,neutre,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,1,neutre,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,1,neutre,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,1,neutre,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,"0,3367184249",conserve,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,"0,307749041",conserve,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Proteolysis,OG0000637,"0,24174264",conserve,Cathepsin_O,Cathepsin propeptide inhibitor domain (I29)|Papain family cysteine protease,"Peptidase C1A, papain C-terminal|Cathepsin propeptide inhibitor domain (I29)|Cysteine peptidase, histidine active site|Cysteine peptidase, asparagine active site|Papain-like cysteine peptidase superfamily|Papain-like cysteine endopeptidase"
+Signaling&Ctrl,OG0000368,1,neutre,Uncharacterized_protein,Inositol hexakisphosphate,Protein-tyrosine phosphatase-like
+Signaling&Ctrl,OG0000368,1,neutre,Uncharacterized_protein,Inositol hexakisphosphate,Protein-tyrosine phosphatase-like
+Signaling&Ctrl,OG0000368,1,neutre,Uncharacterized_protein,Inositol hexakisphosphate,Protein-tyrosine phosphatase-like
+Signaling&Ctrl,OG0000368,1,neutre,Uncharacterized_protein,Inositol hexakisphosphate,Protein-tyrosine phosphatase-like
+Signaling&Ctrl,OG0000368,"0,3131656969",conserve,Uncharacterized_protein,Inositol hexakisphosphate,Protein-tyrosine phosphatase-like
+Signaling&Ctrl,OG0000368,"0,22571269",conserve,Uncharacterized_protein,Inositol hexakisphosphate,Protein-tyrosine phosphatase-like
+Signaling&Ctrl,OG0000504,1,neutre,Uncharacterized_protein,Inositol hexakisphosphate,Protein-tyrosine phosphatase-like
+Signaling&Ctrl,OG0000712,1,neutre,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,1,neutre,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,1,neutre,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,1,neutre,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,1,neutre,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,"0,2506484601",conserve,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,"0,2281964879",conserve,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,"0,2260692284",conserve,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,"0,2236520305",conserve,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0000712,"0,1850796017",conserve,Phosphatidylethanolamine-binding_protein,-,"Phosphatidylethanolamine-binding protein, eukaryotic|PEBP-like superfamily"
+Signaling&Ctrl,OG0001297,1,neutre,Protein_quiver,Sleepless protein,-
+Signaling&Ctrl,OG0001297,1,neutre,Protein_quiver,Sleepless protein,-
+Signaling&Ctrl,OG0001297,1,neutre,Protein_quiver,Sleepless protein,-
+Signaling&Ctrl,OG0001297,1,neutre,Protein_quiver,Sleepless protein,-
+Signaling&Ctrl,OG0001297,"0,4412363801",conserve,Protein_quiver,Sleepless protein,-
+Signaling&Ctrl,OG0001297,"0,23143755",conserve,Protein_quiver,Sleepless protein,-
+Sugar_metabolism,OG0000380,1,neutre,Phosphotransferase,Hexokinase|Hexokinase,"Hexokinase|ATPase, nucleotide binding domain"
+Sugar_metabolism,OG0000380,1,neutre,Phosphotransferase,Hexokinase|Hexokinase,"Hexokinase|ATPase, nucleotide binding domain"
+Sugar_metabolism,OG0000380,1,neutre,Phosphotransferase,Hexokinase|Hexokinase,"Hexokinase|ATPase, nucleotide binding domain"
+Sugar_metabolism,OG0000380,"0,9153491245",neutre,Phosphotransferase,Hexokinase|Hexokinase,"Hexokinase|ATPase, nucleotide binding domain"
+Sugar_metabolism,OG0000380,"0,2395958157",conserve,Phosphotransferase,Hexokinase|Hexokinase,"Hexokinase|ATPase, nucleotide binding domain"
+Sugar_metabolism,OG0000380,"0,198833082",conserve,Phosphotransferase,Hexokinase|Hexokinase,"Hexokinase|ATPase, nucleotide binding domain"
+Sugar_metabolism,OG0000465,1,neutre,Multiple_inositol_polyphosphate_phosphatase_1,Histidine phosphatase superfamily (branch 2),"Histidine phosphatase superfamily, clade-2|Histidine acid phosphatase, eukaryotic|Histidine phosphatase superfamily"
+Sugar_metabolism,OG0000465,1,neutre,Multiple_inositol_polyphosphate_phosphatase_1,Histidine phosphatase superfamily (branch 2),"Histidine phosphatase superfamily, clade-2|Histidine acid phosphatase, eukaryotic|Histidine phosphatase superfamily"
+Sugar_metabolism,OG0000465,1,neutre,Multiple_inositol_polyphosphate_phosphatase_1,Histidine phosphatase superfamily (branch 2),"Histidine phosphatase superfamily, clade-2|Histidine acid phosphatase, eukaryotic|Histidine phosphatase superfamily"
+Sugar_metabolism,OG0001221,1,neutre,Glucose_1-dehydrogenase,Enoyl-(Acyl carrier protein) reductase,"Short-chain dehydrogenase/reductase SDR|Short-chain dehydrogenase/reductase, conserved site|NAD(P)-binding domain superfamily"
+Sugar_metabolism,OG0001697,"0,3220199088",conserve,UDP-glucose_4-epimerase,"GDP-mannose 4,6 dehydratase",UDP-glucose 4-epimerase|NAD(P)-binding domain superfamily
+Sugar_metabolism,OG0001717,1,neutre,Fructose-bisphosphate_aldolase,Fructose-bisphosphate aldolase class-I,"Fructose-bisphosphate aldolase, class-I|Aldolase-type TIM barrel|Fructose-bisphosphate aldolase class-I active site"
+Sugar_metabolism,OG0002378,1,neutre,ribose-phosphate_diphosphokinase,N-terminal domain of ribose phosphate pyrophosphokinase|Phosphoribosyl synthetase-associated domain,"Phosphoribosyltransferase domain|Phosphoribosyl pyrophosphate synthetase, conserved site|Ribose-phosphate pyrophosphokinase|Phosphoribosyltransferase-like"
+Sugar_metabolism,OG0002538,1,neutre,"Lactase-phlorizin_hydrolase,Myrosinase_1,Beta-glucosidase_1B,Lactase-like_protein,Beta-glucosidase_1A",EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|Recoverin family"
+Sugar_metabolism,OG0002538,1,neutre,"Lactase-phlorizin_hydrolase,Myrosinase_1,Beta-glucosidase_1B,Lactase-like_protein,Beta-glucosidase_1A",EF-hand domain pair,"EF-hand domain|EF-hand domain pair|EF-Hand 1, calcium-binding site|Recoverin family"
+Sugar_metabolism,OG0004490,"0,2369525043",conserve,L-galactose_dehydrogenase,Aldo/keto reductase family,Aldo-keto reductase|NADP-dependent oxidoreductase domain superfamily|L-galactose dehydrogenase-like
+Sugar_metabolism,OG0006885,1,neutre,D-lactate_dehydrogenase,"D-isomer specific 2-hydroxyacid dehydrogenase, catalytic domain|D-isomer specific 2-hydroxyacid dehydrogenase, NAD binding domain","D-isomer specific 2-hydroxyacid dehydrogenase, NAD-binding domain conserved site|NAD(P)-binding domain superfamily"
+Transport,OG0000176,1,neutre,Y+L_amino_acid_transporter_2like_[Apis_florea],Amino acid permease,-
+Transport,OG0000176,1,neutre,Y+L_amino_acid_transporter_2like_[Apis_florea],Amino acid permease,-
+Transport,OG0000176,1,neutre,Y+L_amino_acid_transporter_2like_[Apis_florea],Amino acid permease,-
+Transport,OG0000176,1,neutre,Y+L_amino_acid_transporter_2like_[Apis_florea],Amino acid permease,-
+Transport,OG0000176,"0,2614536449",conserve,Y+L_amino_acid_transporter_2like_[Apis_florea],Amino acid permease,-
+Transport,OG0000176,"0,2149421567",conserve,Y+L_amino_acid_transporter_2like_[Apis_florea],Amino acid permease,-
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,1,neutre,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,"0,2541538931",conserve,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,"0,2296514149",conserve,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,"0,2066346905",conserve,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,"0,1865746602",conserve,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000270,"0,1766728836",conserve,Heme-binding_protein_1-like_1,SOUL heme-binding protein,"SOUL haem-binding protein|Regulatory factor, effector binding domain superfamily"
+Transport,OG0000329,1,neutre,Transporter,Sodium:neurotransmitter symporter family,Sodium:neurotransmitter symporter|Sodium:neurotransmitter symporter superfamily
+Transport,OG0000381,1,neutre,Uncharacterized_protein,Amino acid permease|Solute carrier family 12,SLC12A transporter family
+Transport,OG0000394,"1,194112112",neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,1,neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,1,neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,1,neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,1,neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,1,neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,1,neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,1,neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,1,neutre,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000394,"0,1599920801",conserve,Sodium-dependent_phosphate_transport_protein_2B,Na+/Pi-cotransporter|Na+/Pi-cotransporter,Sodium-dependent phosphate transport protein
+Transport,OG0000434,1,neutre,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,1,neutre,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,1,neutre,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,1,neutre,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,"0,3397272971",conserve,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,"0,2654916856",conserve,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,"0,2466868819",conserve,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,"0,2240041065",conserve,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,"0,2233764989",conserve,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000434,"0,1854306064",conserve,Scavenger_receptor_class_B_member_1,CD36 family,CD36 family
+Transport,OG0000636,1,neutre,EamA_domain_containing_protein,EamA-like transporter family,-
+Transport,OG0000636,"0,3372332601",conserve,EamA_domain_containing_protein,EamA-like transporter family,-
+Transport,OG0000636,"0,1806145939",conserve,EamA_domain_containing_protein,EamA-like transporter family,-
+Transport,OG0001301,1,neutre,Amino_acid_transporter,Sodium:dicarboxylate symporter family,"Sodium:dicarboxylate symporter, conserved site|Sodium:dicarboxylate symporter superfamily"
+Transport,OG0001301,1,neutre,Amino_acid_transporter,Sodium:dicarboxylate symporter family,"Sodium:dicarboxylate symporter, conserved site|Sodium:dicarboxylate symporter superfamily"
+Transport,OG0001301,"0,2567518675",conserve,Amino_acid_transporter,Sodium:dicarboxylate symporter family,"Sodium:dicarboxylate symporter, conserved site|Sodium:dicarboxylate symporter superfamily"
+Transport,OG0001733,1,neutre,Amino_acid_transporter,Sodium:dicarboxylate symporter family,"Sodium:dicarboxylate symporter, conserved site|Sodium:dicarboxylate symporter superfamily"
+Transport,OG0001786,"0,2576838478",conserve,SLC41A/MgtE_integral_membrane_domain-containing_protein,Divalent cation transporter|Divalent cation transporter,"SLC41A/MgtE divalent cation transporters, integral membrane domain superfamily|SLC41A divalent cation transporter"
+Transport,OG0001786,"0,203213506",conserve,SLC41A/MgtE_integral_membrane_domain-containing_protein,Divalent cation transporter|Divalent cation transporter,"SLC41A/MgtE divalent cation transporters, integral membrane domain superfamily|SLC41A divalent cation transporter"
+Transport,OG0001786,"0,1932746601",conserve,SLC41A/MgtE_integral_membrane_domain-containing_protein,Divalent cation transporter|Divalent cation transporter,"SLC41A/MgtE divalent cation transporters, integral membrane domain superfamily|SLC41A divalent cation transporter"
+Transport,OG0003377,1,neutre,VDE_lipocalin_domain-containing_protein,VDE lipocalin domain,Calycin
+Transport,OG0003377,1,neutre,VDE_lipocalin_domain-containing_protein,VDE lipocalin domain,Calycin
+Transport,OG0003377,"0,2395294604",conserve,VDE_lipocalin_domain-containing_protein,VDE lipocalin domain,Calycin
+Transport,OG0007380,1,neutre,DUF305_domain-containing_protein,Domain of unknown function (DUF305),Ferritin-like
+Transport,OG0007380,1,neutre,DUF305_domain-containing_protein,Domain of unknown function (DUF305),Ferritin-like
+Transport,OG0007380,"0,2584842312",conserve,DUF305_domain-containing_protein,Domain of unknown function (DUF305),Ferritin-like

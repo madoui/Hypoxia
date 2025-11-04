@@ -1,0 +1,400 @@
+---
+title: "Link betwwen selection vs copy number of hypoxia-induced genes in Calanoids copepod"
+author: "Amin Madoui"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+  pdf_document: default
+---
+# Load data and format
+```{r setup, include=FALSE}
+library(dplyr)
+library(tidyr)
+### 1. Charger Ka/Ks
+KaKs <- read.csv("tabKaKs_allCategories.csv",
+                 header = TRUE, sep = ",") %>%
+  mutate(
+    KaKs = as.numeric(gsub(",", ".", ration.Ka.Ks)),
+    logKaKs = log(KaKs + 1e-6),
+    Orthogroup_ID = as.character(Orthogroup_ID)
+  ) %>%
+  select(Orthogroup_ID, KaKs, logKaKs)
+
+# Résumer Ka/Ks par OG
+KaKs_summary <- KaKs %>%
+  group_by(Orthogroup_ID) %>%
+  summarise(
+    KaKs_mean = mean(KaKs, na.rm = TRUE),
+    KaKs_q50 = median(KaKs, na.rm = TRUE),
+    KaKs_q25 = quantile(KaKs, 0.25, na.rm = TRUE),
+    KaKs_q75 = quantile(KaKs, 0.75, na.rm = TRUE),
+    KaKs_min = min(KaKs, na.rm = TRUE),
+    KaKs_max = max(KaKs, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+### 2. Charger OG_count (Process vient de ce fichier)
+OG_count <- read.csv("final_classifedGenes_Amin.txt", header = TRUE, sep = "\t") %>%
+  mutate(across(c(Mean_Metridinidae, Mean_Centropagoidae, Mean_Pancalanidae),
+                ~ as.numeric(gsub(",", ".", .x)))) %>%
+  mutate(Orthogroup_ID = as.character(Orthogroup_ID)) %>%
+  select(Orthogroup_ID, Process, IPR_desc,
+         Mean_Metridinidae, Mean_Centropagoidae, Mean_Pancalanidae)
+
+### 3. Fusionner : annotation (Process) + résumé Ka/Ks
+#merged <- OG_count %>%
+#  left_join(KaKs_summary, by = "Orthogroup_ID")
+OG_copy <- OG_count %>%
+  select(Orthogroup_ID,Process,
+         Mean_Metridinidae,
+         Mean_Centropagoidae,
+         Mean_Pancalanidae) %>%
+  distinct()
+OG_profile <- merge(KaKs_summary, OG_copy, by="Orthogroup_ID")
+```
+
+# PCA
+```{r}
+library(ggplot2)
+library(ggfortify)
+library(ggplot2)
+
+
+
+# 2. Keep only the correct Process column
+OG_process <- OG_profile %>%
+  select(Orthogroup_ID, Process = Process) %>%   # or Process.y, depending on the correct one
+  distinct()
+
+# 3. PCA (comme avant)
+mat <- OG_profile[, c("KaKs_q25","KaKs_q50","KaKs_q75",
+                      "KaKs_min","KaKs_max",
+                      "Mean_Metridinidae","Mean_Centropagoidae","Mean_Pancalanidae")]
+
+mat_scaled <- scale(mat)
+pca <- prcomp(na.omit(mat_scaled), center=TRUE, scale.=TRUE)
+
+# 4. Extraire coordonnées PCA + ajouter Process
+pca_df <- as.data.frame(pca$x[,1:2])
+pca_df$Orthogroup_ID <- OG_profile$Orthogroup_ID
+pca_df$Process <- as.factor(OG_profile$Process)
+
+# 5. Visualiser
+
+process_colors <- c(
+  "#E41A1C", # rouge vif
+  "#377EB8", # bleu
+  "#4DAF4A", # vert
+  "#984EA3", # violet
+  "black", 
+  "#A65628", # brun
+  "#F781BF", # rose
+  "#999999", # gris
+  "#66C2A5", # turquoise
+  "#FFD92F", # jaune
+  "#E5C494", # beige
+  "#8DA0CB", # bleu clair
+  "#FC8D62"  # corail
+)
+
+
+ggplot(pca_df, aes(x = PC1, y = PC2, color = Process)) +
+  geom_point(size=3, alpha=0.9) +
+  scale_color_manual(values = process_colors) +
+  theme_bw() +
+  ggtitle("PCA of OGs colored by Process")
+
+
+library(vegan)
+
+# Matrice des variables numériques
+mat <- OG_profile[, c("KaKs_q25","KaKs_q50","KaKs_q75",
+                      "KaKs_min","KaKs_max",
+                      "Mean_Metridinidae","Mean_Centropagoidae","Mean_Pancalanidae")]
+
+library(factoextra)
+fviz_pca_var(pca, repel = TRUE)  # contribution des variables numériques aux axes
+
+# Var explained
+
+var_explained <- pca$sdev^2 / sum(pca$sdev^2)
+
+# Cumulative variance
+cumvar <- cumsum(var_explained)
+
+# Display table
+data.frame(PC = 1:length(var_explained),
+           Variance = round(var_explained * 100, 2),
+           Cumulative = round(cumvar * 100, 2))
+
+# Éboulis (scree) plot
+plot(cumvar * 100, type = "b", pch = 19, 
+     xlab = "Principal Component", ylab = "Cumulative variance explained (%)",
+     main = "Scree plot (ébouli des valeurs propres)")
+```
+
+# K-mean clustering with k=4
+```{r}
+set.seed(123)  # for reproducibility
+
+# Use first PCs (say first 2 or 3) for clustering
+pc_scores <- as.data.frame(pca$x[,1:3])   # keep first 3 axes
+#rownames(pc_scores) <- OG_profile$Orthogroup_ID
+
+# K-means clustering into 4 groups
+km <- kmeans(pc_scores, centers = 4, nstart = 25)
+
+# Add cluster assignment to PCA dataframe
+pca_df$Cluster <- as.factor(km$cluster)
+
+# Plot PCA colored by cluster
+ggplot(pca_df, aes(x = PC1, y = PC2, color = Cluster)) +
+  geom_point(size=3, alpha=0.9) +
+  theme_bw() +
+  ggtitle("PCA of OGs clustered into 4 groups")
+
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+# pca_df must already contain: PC1, PC2, Process (factor), Cluster (factor)
+# process_colors: your 13-color vector for Process
+
+# 1) Compute ellipse centroids per cluster
+centroids <- pca_df %>%
+  group_by(Cluster) %>%
+  summarise(PC1 = mean(PC1, na.rm = TRUE),
+            PC2 = mean(PC2, na.rm = TRUE))
+
+# 2) Plot: points by Process, ellipses by Cluster, labels at centroids
+PCA_plot = ggplot(pca_df, aes(x = PC1, y = PC2, color = Process)) +
+  geom_point(size = 2, alpha = 0.9) +
+  stat_ellipse(aes(group = Cluster),
+               color = "black", linetype = 2, linewidth = 0.8) +
+  # cluster numbers
+  geom_text(data = centroids,
+            aes(x = PC1, y = PC2, label = Cluster),
+            color = "black", fontface = "bold", size = 5, show.legend = FALSE) +
+  scale_color_manual(values = process_colors) +
+  theme_bw() +
+  labs(title = "PCA of OGs colored by Process with 4 k-means cluster ellipses",
+       x = "PC1", y = "PC2")+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.border = element_blank(),panel.background = element_blank(), axis.line = element_line(colour = "black"), text = element_text(size = 7))
+plot(PCA_plot)
+ggsave("kaks_plot.pdf",
+       plot = PCA_plot,
+       width = 6, height = 2)
+```
+# biplot
+```{r}
+library(ggrepel)
+
+# --- 1. Extract loadings (variable contributions) ---
+loadings <- as.data.frame(pca$rotation[, 1:2])  # PC1 & PC2
+loadings$Variable <- rownames(loadings)
+
+# --- 2. Scale loadings to match PCA space (multiply by factor)
+arrow_factor <- 3  # adjust for arrow length visibility
+loadings <- loadings %>%
+  mutate(
+    arrow_x = 0, arrow_y = 0,
+    arrow_xend = PC1 * arrow_factor,
+    arrow_yend = PC2 * arrow_factor,
+    Label = Variable
+  )
+
+# --- 3. Compute cluster centroids ---
+centroids <- pca_df %>%
+  group_by(Cluster) %>%
+  summarise(PC1 = mean(PC1, na.rm = TRUE),
+            PC2 = mean(PC2, na.rm = TRUE),
+            .groups = "drop")
+
+# --- 4. Biplot ---
+PCA_plot <- ggplot(pca_df, aes(PC1, PC2, color = Process)) +
+  geom_point(size = 1.5, alpha = 0.8) +
+  stat_ellipse(aes(group = Cluster),
+               color = "black", linetype = 2, linewidth = 0.8) +
+  geom_text(data = centroids, aes(label = Cluster),
+            color = "black", fontface = "bold", size = 5, show.legend = FALSE) +
+  geom_segment(data = loadings,
+               aes(x = arrow_x, y = arrow_y,
+                   xend = arrow_xend, yend = arrow_yend),
+               inherit.aes = FALSE,
+               arrow = arrow(length = unit(0.25, "cm")),
+               linewidth = 0.7, color = "grey20") +
+  geom_label_repel(data = loadings,
+                   aes(x = arrow_xend, y = arrow_yend, label = Label),
+                   inherit.aes = FALSE, size = 3.3, fill = "white",
+                   min.segment.length = 0, seed = 123) +
+  scale_color_manual(values = process_colors) +
+  labs(
+    title = "PCA biplot: OGs colored by Process, cluster ellipses, variable loadings",
+    x = paste0("PC1 (", round(100 * summary(pca)$importance[2,1], 1), "%)"),
+    y = paste0("PC2 (", round(100 * summary(pca)$importance[2,2], 1), "%)")
+  ) +
+  theme_bw()
+
+PCA_plot
+ggsave("kaks_biplot.pdf", plot = PCA_plot, width = 5, height = 3)
+
+
+```
+# with color
+```{r}
+# Extract PC1 and PC3 scores
+pca_df13 <- as.data.frame(pca$x[, c(1, 3)])
+colnames(pca_df13) <- c("PC1", "PC3")
+pca_df13$Orthogroup_ID <- OG_profile$Orthogroup_ID
+pca_df13$Process <- as.factor(OG_profile$Process)
+pca_df13$Cluster <- pca_df$Cluster  # reuse cluster assignment
+
+# Variable loadings (for arrows)
+loadings <- as.data.frame(pca$rotation[, c(1, 3)])
+colnames(loadings) <- c("PC1", "PC3")
+loadings$Variable <- rownames(loadings)
+
+# Scale loadings for plotting
+loadings_scaled <- loadings %>%
+  mutate(PC1 = PC1 * 3, PC3 = PC3 * 3)   # factor to adjust arrow length
+
+# Biplot
+ggplot(pca_df13, aes(x = PC1, y = PC3, color = Cluster)) +
+  geom_point(size = 2, alpha = 0.8) +
+  geom_segment(data = loadings_scaled,
+               aes(x = 0, y = 0, xend = PC1, yend = PC3),
+               arrow = arrow(length = unit(0.2, "cm")),
+               inherit.aes = FALSE, color = "black") +
+  geom_text(data = loadings_scaled,
+            aes(x = PC1, y = PC3, label = Variable),
+            vjust = 1.5, color = "black", size = 3) +
+  theme_bw() +
+  labs(title = "PCA biplot on PC1 and PC3",
+       x = "PC1", y = "PC3")
+
+```
+
+# cluster components by functional classes
+```{r}
+library(dplyr)
+library(ggplot2)
+
+# Counts per cluster × process
+pie_df <- pca_df %>%
+  count(Cluster, Process, name = "n") %>%
+  group_by(Cluster) %>%
+  mutate(frac = n / sum(n)) %>%
+  ungroup()
+
+# Pie charts (one facet per cluster)
+pies = ggplot(pie_df, aes(x = "", y = frac, fill = Process)) +
+  geom_col(width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  facet_wrap(~ Cluster) +
+  scale_fill_manual(values = process_colors) +
+  theme_bw() +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.grid = element_blank(),
+        strip.background = element_rect(fill = "grey95")) +
+  ggtitle("Process composition by cluster (pie charts)")
+
+plot(pies)
+ggsave("pies.pdf",
+       pies,
+       width = 3,
+       height = 3)
+```
+
+# Variables contribution to clusters on barplot
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# variables to plot
+vars_used <- c("KaKs_q25","KaKs_q50","KaKs_q75",
+               "KaKs_min","KaKs_max",
+               "Mean_Metridinidae","Mean_Centropagoidae","Mean_Pancalanidae")
+
+# ensure Cluster is mapped from your PCA results
+OG_profile$Cluster <- pca_df$Cluster[match(OG_profile$Orthogroup_ID, pca_df$Orthogroup_ID)]
+
+# 1) global scaling
+OGz <- OG_profile
+OGz[vars_used] <- scale(OG_profile[vars_used])
+
+# 2) mean (and SE) per cluster per variable
+cluster_means_z <- OGz %>%
+  group_by(Cluster) %>%
+  summarise(across(all_of(vars_used),
+                   list(mean = ~mean(.x, na.rm=TRUE),
+                        se   = ~sd(.x, na.rm=TRUE)/sqrt(sum(!is.na(.x)))),
+                   .names = "{.col}_{.fn}"),
+            .groups = "drop") %>%
+  pivot_longer(-Cluster, names_to = "VarStat", values_to = "Value") %>%
+  separate(VarStat, into = c("Variable","Stat"), sep = "_(?=[^_]+$)") %>%
+  pivot_wider(names_from = Stat, values_from = Value)
+
+# 3) order variables within each facet by mean
+cluster_means_z <- cluster_means_z %>%
+  group_by(Cluster) %>%
+  mutate(Variable = reorder(Variable, mean)) %>%
+  ungroup()
+
+# 4) facet barplot (one plot per cluster), with error bars
+ggplot(cluster_means_z, aes(x = Variable, y = mean)) +
+  geom_col(fill = "grey40", width = 0.75) +
+  geom_errorbar(aes(ymin = mean - se, ymax = mean + se), width = 0.2) +
+  coord_flip() +
+  facet_wrap(~ Cluster, scales = "free_x") +
+  theme_bw() +
+  labs(title = "Standardized (z) mean of variables per cluster",
+       x = NULL, y = "Mean (z-score)")
+
+```
+
+
+# variables contribution to clusters on heatmap
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# Variables of interest
+vars_used <- c("KaKs_q25","KaKs_q50","KaKs_q75",
+               "KaKs_min","KaKs_max",
+               "Mean_Metridinidae","Mean_Centropagoidae","Mean_Pancalanidae")
+
+# Scale the variables before aggregation
+OG_scaled <- OG_profile %>%
+  mutate(across(all_of(vars_used), scale))
+
+# Compute cluster means
+cluster_means <- OG_scaled %>%
+  group_by(Cluster) %>%
+  summarise(across(all_of(vars_used), mean, na.rm = TRUE), .groups = "drop")
+
+# Reshape to long format
+heatmap_data <- cluster_means %>%
+  pivot_longer(-Cluster, names_to = "Variable", values_to = "MeanScaled")
+
+# Plot heatmap
+heat_plot = ggplot(heatmap_data, aes(x = Cluster, y = Variable, fill = MeanScaled)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient2(low = "blue", mid = "white", high = "red", midpoint = 0) +
+  theme_minimal() +
+  labs( x = "Cluster", y = "Variable") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.border = element_blank(),panel.background = element_blank(), axis.line = element_line(colour = "black"), text = element_text(size = 7))
+
+plot(heat_plot)
+
+ggsave(filename = "heatmap_clustar_variables.pdf",
+       heat_plot,
+       width = 3,
+       height = 2)
+```
