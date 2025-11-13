@@ -1,0 +1,527 @@
+---
+title: "OGenrichement_annot"
+output: html_document
+---
+#input data general
+```{r}
+#lib
+library(dplyr)
+library(tidyr)
+
+#data
+setwd("tools/R/data/annot")
+
+#all annot of all protein of all proteome
+data <- read.delim("allSpecies.allProt.allAnnot.drosOG.cutoff.ctbl", sep="\t", header=TRUE, quote = "" )
+
+#cat result_summary.tsv | awk '{ if($4>0){ if($5<0.01){ print $0; } } }' | sort -k2 > gainOG_significatif01.tsv
+OGselectedGain <- read.delim("gainOG_significatif01.tsv", sep="\t", header=FALSE, quote = "" )
+names(OGselectedGain)[names(OGselectedGain) == "V1"] <- "OG"
+names(OGselectedGain)[names(OGselectedGain) == "V2"] <- "node"
+
+#cat result_summary.tsv | awk '{ if($4<0){ if($5<0.01){ print $0; } } }' | sort -k2 > lossOG_significatif01.tsv
+OGselectedLoss <- read.delim("lossOG_significatif01.tsv", sep="\t", header=FALSE, quote = "" )
+names(OGselectedLoss)[names(OGselectedLoss) == "V1"] <- "OG"
+names(OGselectedLoss)[names(OGselectedLoss) == "V2"] <- "node"
+
+nodelist <- read.delim("nodeInteret.txt", sep="\t", header=FALSE, quote = "" )
+names(nodelist)[names(nodelist) == "V1"] <- "node"
+names(nodelist)[names(nodelist) == "V2"] <- "nodeID"
+```
+
+#function
+```{r}
+enrichement_GainLoss <- function(listOGannot, OGselected) {
+
+  #presence/absence matrix
+  col2key <- colnames(listOGannot)[2]
+  matrixannot <- listOGannot %>%
+    mutate(value = 1) %>%
+    spread(key = col2key, value = value, fill = 0)
+  matrixannot <- select(matrixannot, -`-`)
+  
+  #All OGs
+  OG_total <- nrow(matrixannot)
+  #All OGs with annot X
+  OG_annot <- colSums(matrixannot[-1])
+  
+  #loop
+  resultats_enrichment <- data.frame()
+  rawResultats_enrichment <- data.frame()
+  for (n in unique(OGselected$node)) {
+    #data for phyper
+    OG_node <- OGselected$OG[OGselected$node == n]
+    
+    subMatrix_node <- matrixannot %>% 
+      filter(OG %in% OG_node)
+    
+    annotOG_node <- colSums(subMatrix_node[-1])
+    
+    OGbyNode <- nrow(subMatrix_node)
+    
+    #phyper loop by annot
+    p_value <- mapply(function(whiteOG, whiteTotal) {
+      phyper(whiteOG-1, whiteTotal, OG_total-whiteTotal, OGbyNode, lower.tail = FALSE)
+    }, whiteOG=annotOG_node, whiteTotal=OG_annot)
+    
+    #corrected pvalue by fdr method
+    p_value_adjusted <- p.adjust(p_value, method = "fdr")
+    
+    #temp dataframe
+    temp_enrichment <- data.frame(
+      node = n,
+      annot = names(p_value),
+      P_value_adjusted = p_value_adjusted
+    )
+    
+    #filter pvalue adjusted < 0.05
+    temp_enrichment_significatif <- temp_enrichment %>% 
+      filter(P_value_adjusted < 0.05)
+    
+    rawResultats_enrichment <- rbind(rawResultats_enrichment, temp_enrichment)
+    resultats_enrichment <- rbind(resultats_enrichment, temp_enrichment_significatif)
+  }
+
+  #return lists
+  return(list(resultats_enrichment = resultats_enrichment, rawResultats_enrichment = rawResultats_enrichment))
+}
+```
+
+
+###################
+##enrichementPfam##
+###################
+#data
+```{r}
+#cat ../../../../data/annot/allSpecies.allProt.allAnnot.drosOG.cutoff.tbl | awk 'BEGIN{ FS="\t"; while(getline<"../../listOG_CAFE.txt">0){ OGCAFE[$1]=1; }; }{ if( OGCAFE[$34]==1){ print $34"\t"$29; } }' | awk 'BEGIN{ FS="\t"; }{ split($2, pfam, "|"); for (i in pfam){ print $1"\t"pfam[i]; } }' | sort -k1 | uniq | sort -u > listOG_pfam.txt
+dfPfam <- read.delim("listOG_pfam.txt", sep="\t", header=FALSE, quote = "" )
+names(dfPfam)[names(dfPfam) == "V1"] <- "OG"
+names(dfPfam)[names(dfPfam) == "V2"] <- "Pfam_ID"
+```
+
+#analysis Gain and Loss
+```{r}
+allResultats_PfamGain <- enrichement_GainLoss(dfPfam, OGselectedGain)
+resultatsEnrichment_PfamGain <- allResultats_PfamGain$resultats_enrichment
+rawResultatsEnrichment_PfamGain <- allResultats_PfamGain$rawResultats_enrichment
+
+allResultats_PfamLoss <- enrichement_GainLoss(dfPfam, OGselectedLoss)
+resultatsEnrichment_PfamLoss <- allResultats_PfamLoss$resultats_enrichment
+rawResultatsEnrichment_PfamLoss <- allResultats_PfamLoss$rawResultats_enrichment
+```
+
+#Save dataframes
+```{r}
+write.table(rawResultatsEnrichment_PfamGain, "rawResults_pfam.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_PfamGain, "significatifResults_pfam.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(rawResultatsEnrichment_PfamLoss, "rawResults_pfam.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_PfamLoss, "significatifResults_pfam.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+#Add Descriptions
+```{r}
+#add NodeDescription
+nodes_resultatsGain <- merge(resultatsEnrichment_PfamGain, nodelist, by = "node")
+nodes_resultatsLoss <- merge(resultatsEnrichment_PfamLoss, nodelist, by = "node")
+
+#add annotDescription
+pfam_desc <- read.table("Pfam.db", header = FALSE, sep="\t",  stringsAsFactors = FALSE)
+names(pfam_desc)[names(pfam_desc) == "V1"] <- "Pfam_ID"
+names(pfam_desc)[names(pfam_desc) == "V2"] <- "Desc_redux"
+names(pfam_desc)[names(pfam_desc) == "V3"] <- "Description"
+
+names(nodes_resultatsGain)[names(nodes_resultatsGain) == "annot"] <- "Pfam_ID"
+nodes_resultatsGain <- merge(nodes_resultatsGain, pfam_desc, by = "Pfam_ID")
+names(nodes_resultatsLoss)[names(nodes_resultatsLoss) == "annot"] <- "Pfam_ID"
+nodes_resultatsLoss <- merge(nodes_resultatsLoss, pfam_desc, by = "Pfam_ID")
+
+#add annot for Leaf results
+leaf_resultatsGain <- resultatsEnrichment_PfamGain[!grepl("^\\d+$", as.character(resultatsEnrichment_PfamGain$node)), ]
+names(leaf_resultatsGain)[names(leaf_resultatsGain) == "annot"] <- "Pfam_ID"
+leaf_resultatsGain <- merge(leaf_resultatsGain, pfam_desc, by = "Pfam_ID")
+
+leaf_resultatsLoss <- resultatsEnrichment_PfamLoss[!grepl("^\\d+$", as.character(resultatsEnrichment_PfamLoss$node)), ]
+names(leaf_resultatsLoss)[names(leaf_resultatsLoss) == "annot"] <- "Pfam_ID"
+leaf_resultatsLoss <- merge(leaf_resultatsLoss, pfam_desc, by = "Pfam_ID")
+```
+
+#save data fot nodes of interrests and leaf
+```{r}
+write.table(nodes_resultatsGain, "nodesResults_pfam.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(nodes_resultatsLoss, "nodesResults_pfam.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsGain, "leafsResults_pfam.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsLoss, "leafsResults_pfam.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+###################
+##enrichement IPR##
+###################
+#data
+```{r}
+#cat ../../../../data/annot/allSpecies.allProt.allAnnot.drosOG.cutoff.tbl | awk 'BEGIN{ FS="\t"; while(getline<"../../listOG_CAFE.txt">0){ OGCAFE[$1]=1; }; }{ if( OGCAFE[$34]==1){ print $34"\t"$29; } }' | awk 'BEGIN{ FS="\t"; }{ split($2, IPR, "|"); for (i in IPR){ print $1"\t"IPR[i]; } }' | sort -k1 | uniq | sort -u > listOG_IPR.txt
+dfIPR <- read.delim("listOG_IPR.txt", sep="\t", header=FALSE, quote = "" )
+names(dfIPR)[names(dfIPR) == "V1"] <- "OG"
+names(dfIPR)[names(dfIPR) == "V2"] <- "IPR_ID"
+```
+
+#analysis Gain and Loss
+```{r}
+allResultats_IPRGain <- enrichement_GainLoss(dfIPR, OGselectedGain)
+resultatsEnrichment_IPRGain <- allResultats_IPRGain$resultats_enrichment
+rawResultatsEnrichment_IPRGain <- allResultats_IPRGain$rawResultats_enrichment
+
+allResultats_IPRLoss <- enrichement_GainLoss(dfIPR, OGselectedLoss)
+resultatsEnrichment_IPRLoss <- allResultats_IPRLoss$resultats_enrichment
+rawResultatsEnrichment_IPRLoss <- allResultats_IPRLoss$rawResultats_enrichment
+```
+
+#Save dataframes
+```{r}
+write.table(rawResultatsEnrichment_IPRGain, "rawResults_IPR.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_IPRGain, "significatifResults_IPR.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(rawResultatsEnrichment_IPRLoss, "rawResults_IPR.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_IPRLoss, "significatifResults_IPR.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+#Add Descriptions
+```{r}
+#add NodeDescription
+nodes_resultatsIPRGain <- merge(resultatsEnrichment_IPRGain, nodelist, by = "node")
+nodes_resultatsIPRLoss <- merge(resultatsEnrichment_IPRLoss, nodelist, by = "node")
+
+#add annotDescription
+IPR_desc <- read.table("IPR_desc.txt", header = FALSE, sep="\t",  stringsAsFactors = FALSE)
+names(IPR_desc)[names(IPR_desc) == "V1"] <- "IPR_ID"
+names(IPR_desc)[names(IPR_desc) == "V2"] <- "Desc_redux"
+names(IPR_desc)[names(IPR_desc) == "V3"] <- "Description"
+
+names(nodes_resultatsIPRGain)[names(nodes_resultatsIPRGain) == "annot"] <- "IPR_ID"
+nodes_resultatsIPRGain <- merge(nodes_resultatsIPRGain, IPR_desc, by = "IPR_ID")
+names(nodes_resultatsIPRLoss)[names(nodes_resultatsIPRLoss) == "annot"] <- "IPR_ID"
+nodes_resultatsIPRLoss <- merge(nodes_resultatsIPRLoss, IPR_desc, by = "IPR_ID")
+
+#add annot for Leaf results
+leaf_resultatsIPRGain <- resultatsEnrichment_IPRGain[!grepl("^\\d+$", as.character(resultatsEnrichment_IPRGain$node)), ]
+names(leaf_resultatsIPRGain)[names(leaf_resultatsIPRGain) == "annot"] <- "IPR_ID"
+leaf_resultatsIPRGain <- merge(leaf_resultatsIPRGain, IPR_desc, by = "IPR_ID")
+
+leaf_resultatsIPRLoss <- resultatsEnrichment_IPRLoss[!grepl("^\\d+$", as.character(resultatsEnrichment_IPRLoss$node)), ]
+names(leaf_resultatsIPRLoss)[names(leaf_resultatsIPRLoss) == "annot"] <- "IPR_ID"
+leaf_resultatsIPRLoss <- merge(leaf_resultatsIPRLoss, IPR_desc, by = "IPR_ID")
+```
+
+#save data fot nodes of interrests and leaf
+```{r}
+write.table(nodes_resultatsIPRGain, "nodesResults_IPR.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(nodes_resultatsIPRLoss, "nodesResults_IPR.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsIPRGain, "leafsResults_IPR.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsIPRLoss, "leafsResults_IPR.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+#################################
+##BiologicalProcess enrichement##
+#################################
+#data
+```{r}
+#cat ../../../../data/annot/allSpecies.allProt.allAnnot.drosOG.cutoff.tbl | awk 'BEGIN{ FS="\t"; while(getline<"../../listOG_CAFE.txt">0){ OGCAFE[$1]=1; }; }{ if( OGCAFE[$34]==1){ print $34"\t"$29; } }' | awk 'BEGIN{ FS="\t"; }{ split($2, GOBP, "|"); for (i in GOBP){ print $1"\t"GOBP[i]; } }' | sort -k1 | uniq | sort -u > listOG_GOBP.txt
+dfGOBP <- read.delim("listOG_GOBP.txt", sep="\t", header=FALSE, quote = "" )
+names(dfGOBP)[names(dfGOBP) == "V1"] <- "OG"
+names(dfGOBP)[names(dfGOBP) == "V2"] <- "GOBP_ID"
+```
+
+#analysis Gain and Loss
+```{r}
+allResultats_GOBPGain <- enrichement_GainLoss(dfGOBP, OGselectedGain)
+resultatsEnrichment_GOBPGain <- allResultats_GOBPGain$resultats_enrichment
+rawResultatsEnrichment_GOBPGain <- allResultats_GOBPGain$rawResultats_enrichment
+
+allResultats_GOBPLoss <- enrichement_GainLoss(dfGOBP, OGselectedLoss)
+resultatsEnrichment_GOBPLoss <- allResultats_GOBPLoss$resultats_enrichment
+rawResultatsEnrichment_GOBPLoss <- allResultats_GOBPLoss$rawResultats_enrichment
+```
+
+#Save dataframes
+```{r}
+write.table(rawResultatsEnrichment_GOBPGain, "rawResults_GOBP.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_GOBPGain, "significatifResults_GOBP.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(rawResultatsEnrichment_GOBPLoss, "rawResults_GOBP.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_GOBPLoss, "significatifResults_GOBP.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+#Add Descriptions
+```{r}
+#add NodeDescription
+nodes_resultatsGOBPGain <- merge(resultatsEnrichment_GOBPGain, nodelist, by = "node")
+nodes_resultatsGOBPLoss <- merge(resultatsEnrichment_GOBPLoss, nodelist, by = "node")
+
+#add annotDescription
+GOBP_desc <- read.table("BP_GOterms_desc3lvl.txt", header = FALSE, sep="\t",  stringsAsFactors = FALSE)
+names(GOBP_desc)[names(GOBP_desc) == "V1"] <- "GOBP_ID"
+names(GOBP_desc)[names(GOBP_desc) == "V2"] <- "GOBP_desc"
+names(GOBP_desc)[names(GOBP_desc) == "V3"] <- "catIII"
+names(GOBP_desc)[names(GOBP_desc) == "V4"] <- "catII"
+names(GOBP_desc)[names(GOBP_desc) == "V5"] <- "catI"
+
+names(nodes_resultatsGOBPGain)[names(nodes_resultatsGOBPGain) == "annot"] <- "GOBP_ID"
+nodes_resultatsGOBPGain <- merge(nodes_resultatsGOBPGain, GOBP_desc, by = "GOBP_ID")
+names(nodes_resultatsGOBPLoss)[names(nodes_resultatsGOBPLoss) == "annot"] <- "GOBP_ID"
+nodes_resultatsGOBPLoss <- merge(nodes_resultatsGOBPLoss, GOBP_desc, by = "GOBP_ID")
+
+#add annot for Leaf results
+leaf_resultatsGOBPGain <- resultatsEnrichment_GOBPGain[!grepl("^\\d+$", as.character(resultatsEnrichment_GOBPGain$node)), ]
+names(leaf_resultatsGOBPGain)[names(leaf_resultatsGOBPGain) == "annot"] <- "GOBP_ID"
+leaf_resultatsGOBPGain <- merge(leaf_resultatsGOBPGain, GOBP_desc, by = "GOBP_ID")
+
+leaf_resultatsGOBPLoss <- resultatsEnrichment_GOBPLoss[!grepl("^\\d+$", as.character(resultatsEnrichment_GOBPLoss$node)), ]
+names(leaf_resultatsGOBPLoss)[names(leaf_resultatsGOBPLoss) == "annot"] <- "GOBP_ID"
+leaf_resultatsGOBPLoss <- merge(leaf_resultatsGOBPLoss, GOBP_desc, by = "GOBP_ID")
+```
+
+#save data fot nodes of interrests and leaf
+```{r}
+write.table(nodes_resultatsGOBPGain, "nodesResults_GOBP.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(nodes_resultatsGOBPLoss, "nodesResults_GOBP.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsGOBPGain, "leafsResults_GOBP.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsGOBPLoss, "leafsResults_GOBP.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+################################
+##MolecularProcess enrichement##
+################################
+#data
+```{r}
+#cat ../../../../data/annot/allSpecies.allProt.allAnnot.drosOG.cutoff.tbl | awk 'BEGIN{ FS="\t"; while(getline<"../../listOG_CAFE.txt">0){ OGCAFE[$1]=1; }; }{ if( OGCAFE[$34]==1){ print $34"\t"$29; } }' | awk 'BEGIN{ FS="\t"; }{ split($2, GOMF, "|"); for (i in GOMF){ print $1"\t"GOMF[i]; } }' | sort -k1 | uniq | sort -u > listOG_GOMF.txt
+dfGOMF <- read.delim("listOG_GOMF.txt", sep="\t", header=FALSE, quote = "" )
+names(dfGOMF)[names(dfGOMF) == "V1"] <- "OG"
+names(dfGOMF)[names(dfGOMF) == "V2"] <- "GOMF_ID"
+```
+
+#analysis Gain and Loss
+```{r}
+allResultats_GOMFGain <- enrichement_GainLoss(dfGOMF, OGselectedGain)
+resultatsEnrichment_GOMFGain <- allResultats_GOMFGain$resultats_enrichment
+rawResultatsEnrichment_GOMFGain <- allResultats_GOMFGain$rawResultats_enrichment
+
+allResultats_GOMFLoss <- enrichement_GainLoss(dfGOMF, OGselectedLoss)
+resultatsEnrichment_GOMFLoss <- allResultats_GOMFLoss$resultats_enrichment
+rawResultatsEnrichment_GOMFLoss <- allResultats_GOMFLoss$rawResultats_enrichment
+```
+
+#Save dataframes
+```{r}
+write.table(rawResultatsEnrichment_GOMFGain, "rawResults_GOMF.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_GOMFGain, "significatifResults_GOMF.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(rawResultatsEnrichment_GOMFLoss, "rawResults_GOMF.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_GOMFLoss, "significatifResults_GOMF.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+#Add Descriptions
+```{r}
+#add NodeDescription
+nodes_resultatsGOMFGain <- merge(resultatsEnrichment_GOMFGain, nodelist, by = "node")
+nodes_resultatsGOMFLoss <- merge(resultatsEnrichment_GOMFLoss, nodelist, by = "node")
+
+#add annotDescription
+GOMF_desc <- read.table("MF_GOterms_desc3lvl.txt", header = FALSE, sep="\t",  stringsAsFactors = FALSE)
+names(GOMF_desc)[names(GOMF_desc) == "V1"] <- "GOMF_ID"
+names(GOMF_desc)[names(GOMF_desc) == "V2"] <- "GOMF_desc"
+names(GOMF_desc)[names(GOMF_desc) == "V3"] <- "catIII"
+names(GOMF_desc)[names(GOMF_desc) == "V4"] <- "catII"
+names(GOMF_desc)[names(GOMF_desc) == "V5"] <- "catI"
+
+names(nodes_resultatsGOMFGain)[names(nodes_resultatsGOMFGain) == "annot"] <- "GOMF_ID"
+nodes_resultatsGOMFGain <- merge(nodes_resultatsGOMFGain, GOMF_desc, by = "GOMF_ID")
+names(nodes_resultatsGOMFLoss)[names(nodes_resultatsGOMFLoss) == "annot"] <- "GOMF_ID"
+nodes_resultatsGOMFLoss <- merge(nodes_resultatsGOMFLoss, GOMF_desc, by = "GOMF_ID")
+
+#add annot for Leaf results
+leaf_resultatsGOMFGain <- resultatsEnrichment_GOMFGain[!grepl("^\\d+$", as.character(resultatsEnrichment_GOMFGain$node)), ]
+names(leaf_resultatsGOMFGain)[names(leaf_resultatsGOMFGain) == "annot"] <- "GOMF_ID"
+leaf_resultatsGOMFGain <- merge(leaf_resultatsGOMFGain, GOMF_desc, by = "GOMF_ID")
+
+leaf_resultatsGOMFLoss <- resultatsEnrichment_GOMFLoss[!grepl("^\\d+$", as.character(resultatsEnrichment_GOMFLoss$node)), ]
+names(leaf_resultatsGOMFLoss)[names(leaf_resultatsGOMFLoss) == "annot"] <- "GOMF_ID"
+leaf_resultatsGOMFLoss <- merge(leaf_resultatsGOMFLoss, GOMF_desc, by = "GOMF_ID")
+```
+
+#save data fot nodes of interrests and leaf
+```{r}
+write.table(nodes_resultatsGOMFGain, "nodesResults_GOMF.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(nodes_resultatsGOMFLoss, "nodesResults_GOMF.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsGOMFGain, "leafsResults_GOMF.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsGOMFLoss, "leafsResults_GOMF.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+##################
+##CC enrichement##
+##################
+#data
+```{r}
+#cat ../../../../data/annot/allSpecies.allProt.allAnnot.drosOG.cutoff.tbl | awk 'BEGIN{ FS="\t"; while(getline<"../../listOG_CAFE.txt">0){ OGCAFE[$1]=1; }; }{ if( OGCAFE[$34]==1){ print $34"\t"$29; } }' | awk 'BEGIN{ FS="\t"; }{ split($2, GOCC, "|"); for (i in GOCC){ print $1"\t"GOCC[i]; } }' | sort -k1 | uniq | sort -u > listOG_GOCC.txt
+dfGOCC <- read.delim("listOG_GOCC.txt", sep="\t", header=FALSE, quote = "" )
+names(dfGOCC)[names(dfGOCC) == "V1"] <- "OG"
+names(dfGOCC)[names(dfGOCC) == "V2"] <- "GOCC_ID"
+```
+
+#analysis Gain and Loss
+```{r}
+allResultats_GOCCGain <- enrichement_GainLoss(dfGOCC, OGselectedGain)
+resultatsEnrichment_GOCCGain <- allResultats_GOCCGain$resultats_enrichment
+rawResultatsEnrichment_GOCCGain <- allResultats_GOCCGain$rawResultats_enrichment
+
+allResultats_GOCCLoss <- enrichement_GainLoss(dfGOCC, OGselectedLoss)
+resultatsEnrichment_GOCCLoss <- allResultats_GOCCLoss$resultats_enrichment
+rawResultatsEnrichment_GOCCLoss <- allResultats_GOCCLoss$rawResultats_enrichment
+```
+
+#Save dataframes
+```{r}
+write.table(rawResultatsEnrichment_GOCCGain, "rawResults_GOCC.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_GOCCGain, "significatifResults_GOCC.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(rawResultatsEnrichment_GOCCLoss, "rawResults_GOCC.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(resultatsEnrichment_GOCCLoss, "significatifResults_GOCC.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+#Add Descriptions
+```{r}
+#add NodeDescription
+nodes_resultatsGOCCGain <- merge(resultatsEnrichment_GOCCGain, nodelist, by = "node")
+nodes_resultatsGOCCLoss <- merge(resultatsEnrichment_GOCCLoss, nodelist, by = "node")
+
+#add annotDescription
+CCGO_desc <- read.table("CC_GOterms_desc3lvl.txt", header = FALSE, stringsAsFactors = FALSE)
+names(GOCC_desc)[names(GOCC_desc) == "V1"] <- "GOCC_ID"
+names(GOCC_desc)[names(GOCC_desc) == "V2"] <- "GOCC_desc"
+names(GOCC_desc)[names(GOCC_desc) == "V3"] <- "catIII"
+names(GOCC_desc)[names(GOCC_desc) == "V4"] <- "catII"
+names(GOCC_desc)[names(GOCC_desc) == "V5"] <- "catI"
+
+names(nodes_resultatsGOCCGain)[names(nodes_resultatsGOCCGain) == "annot"] <- "GOCC_ID"
+nodes_resultatsGOCCGain <- merge(nodes_resultatsGOCCGain, GOCC_desc, by = "GOCC_ID")
+names(nodes_resultatsGOCCLoss)[names(nodes_resultatsGOCCLoss) == "annot"] <- "GOCC_ID"
+nodes_resultatsGOCCLoss <- merge(nodes_resultatsGOCCLoss, GOCC_desc, by = "GOCC_ID")
+
+#add annot for Leaf results
+leaf_resultatsGOCCGain <- resultatsEnrichment_GOCCGain[!grepl("^\\d+$", as.character(resultatsEnrichment_GOCCGain$node)), ]
+names(leaf_resultatsGOCCGain)[names(leaf_resultatsGOCCGain) == "annot"] <- "GOCC_ID"
+leaf_resultatsGOCCGain <- merge(leaf_resultatsGOCCGain, GOCC_desc, by = "GOCC_ID")
+
+leaf_resultatsGOCCLoss <- resultatsEnrichment_GOCCLoss[!grepl("^\\d+$", as.character(resultatsEnrichment_GOCCLoss$node)), ]
+names(leaf_resultatsGOCCLoss)[names(leaf_resultatsGOCCLoss) == "annot"] <- "GOCC_ID"
+leaf_resultatsGOCCLoss <- merge(leaf_resultatsGOCCLoss, GOCC_desc, by = "GOCC_ID")
+```
+
+#save data fot nodes of interrests and leaf
+```{r}
+write.table(nodes_resultatsGOCCGain, "nodesResults_GOCC.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(nodes_resultatsGOCCLoss, "nodesResults_GOCC.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsGOCCGain, "leafsResults_GOCC.gain01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(leaf_resultatsGOCCLoss, "leafsResults_GOCC.loss01.tsv", sep="\t", quote = FALSE, row.names = FALSE)
+```
+
+#all annot of all protein of all proteome
+```{r}
+data <- read.delim("allSpecies.allProt.allAnnot.drosOG.cutoff.35col.tbl", sep="\t", header=T, quote = "" )
+```
+
+#Data GOBP
+```{r}
+data_GOBP <- data %>%
+  group_by(Drosophila_OrthogroupID) %>%
+  separate_rows(GOBP_ID, sep = "\\|") %>% 
+  ungroup()
+
+occurrenceAnnotByOG <- data_GOBP %>%
+  group_by(GOBP_ID, speciesID) %>%
+  summarise(occurenceByOG=n()) %>%
+  ungroup()
+
+occurrenceAnnotByOG$occurenceByOG <- as.numeric(occurrenceAnnotByOG$occurenceByOG)
+occurrenceAnnotByOG <- occurrenceAnnotByOG %>%
+  filter(GOBP_ID != "-")
+
+GOBP_desc <- read.table("BP_GOterms_desc3lvl.txt", header = FALSE, sep="\t",  stringsAsFactors = FALSE)
+names(GOBP_desc)[names(GOBP_desc) == "V1"] <- "GOBP_ID"
+names(GOBP_desc)[names(GOBP_desc) == "V2"] <- "GOBP_desc"
+names(GOBP_desc)[names(GOBP_desc) == "V3"] <- "catIII"
+names(GOBP_desc)[names(GOBP_desc) == "V4"] <- "catII"
+names(GOBP_desc)[names(GOBP_desc) == "V5"] <- "catI"
+
+id_Gain <- read.table('nodesResults_GOBP.gain01.tsv', header = TRUE, stringsAsFactors = FALSE)
+id_Loss <- read.table('nodesResults_GOBP.loss01.tsv', header = TRUE, stringsAsFactors = FALSE)
+matrix_GOBP2 <- occurrenceAnnotByOG %>%
+  spread(key = GOBP_ID, value = occurenceByOG, fill = 0)
+matrix_GOBP2 <- as.data.frame(matrix_GOBP2)
+rownames(matrix_GOBP2) <- matrix_GOBP2[,1]
+matrix_GOBP2 <- select(matrix_GOBP2, -'speciesID')
+```
+
+#scaling occurrence for each col
+```{r}
+dataCol_zscore <- scale(matrix_GOBP2)
+selected_colsG <- dataCol_zscore[ ,colnames(dataCol_zscore) %in% id_Gain$GOBP_ID]
+selected_colsL <- dataCol_zscore[ ,colnames(dataCol_zscore) %in% id_Loss$GOBP_ID]
+allSelected <- cbind(selected_colsG, selected_colsL)
+rowOrder <- c("Tracheliastes-polycolpus", "Lepeophtheirus-salmonis", "Caligus-confusus", "Caligus-rogercresseyi", "Caligus-clemensi", "Platychelipus-littoralis", "Tisbe-furcata", "Tigriopus-kingsejongensis", "Tigriopus-japonicus", "Tigriopus-californicus", "Paracyclopina-nana", "Oithona-nana", "Oithona-similis", "Lernaea-cyprinacea", "Apocyclops-royi", "Eucyclops-serrulatus", "Pleuromamma-robusta", "Pleuromamma-abdominalis", "Pleuromamma-xiphias", "Metridia-longa", "Metridia-lucens", "Metridia-pacifica", "Gigantodiaptomus-amblyodon", "Pseudodiaptomus-annandalei", "Eurytemora-carolleeae", "Eurytemora-affinis", "Temora-longicornis", "Temora-stylifera", "Labidocera-madurae", "Acartia-fossae", "Acartia-tonsa", "Acartia-clausii", "Rhincalanus-gigas", "Eucalanus-hyalinus", "Eucalanus-bungii", "Euchaetidae-sp", "Pseudocalanus-sp", "Calanoides-carinatus", "Calanoides-acutus", "Neocalanus-cristatus", "Neocalanus-plumchrus", "Neocalanus-flemingeri", "Calanus-hyperboreus", "Calanus-propinquus", "Calanus-pacificus", "Calanus-sinicus", "Calanus-helgolandicus", "Calanus-finmarchicus", "Calanus-marshallae", "Calanus-glacialis")
+allSelected <- allSelected[rowOrder, ]
+heatmap.2(allSelected, Rowv = NA, scale = "none", trace = "none", dendrogram = "none", cexRow = 0.6,  cexCol = 0.8, srtCol = 40, density.info = "none", key=FALSE, col = colorRampPalette(c("#8856a7", "white", "#e34a33"))(50), )
+```
+
+#save
+```{r}
+svg("heatmap_GainLoss_GOBP2.svg")
+heatmap.2(allSelected, Rowv = NA, scale = "none", trace = "none", dendrogram = "none", cexRow = 0.6,  cexCol = 0.8, srtCol = 40, density.info = "none", key=TRUE, col = colorRampPalette(c("#8856a7", "white", "#e34a33"))(50), )
+dev.off()
+```
+####
+
+#Data Pfam
+```{r}
+data_Pfam <- data %>%
+  group_by(Drosophila_OrthogroupID) %>%
+  separate_rows(Pfam_ID, sep = "\\|") %>% 
+  ungroup()
+
+occurrenceAnnotByOG_Pfam <- data_Pfam %>%
+  group_by(Pfam_ID, speciesID) %>%
+  summarise(occurenceByOG=n()) %>%
+  ungroup()
+
+occurrenceAnnotByOG_Pfam$occurenceByOG <- as.numeric(occurrenceAnnotByOG_Pfam$occurenceByOG)
+occurrenceAnnotByOG_Pfam <- occurrenceAnnotByOG_Pfam %>%
+  filter(Pfam_ID != "-")
+
+pfam_desc <- read.table("Pfam.db", header = FALSE, sep="\t",  stringsAsFactors = FALSE)
+names(pfam_desc)[names(pfam_desc) == "V1"] <- "Pfam_ID"
+names(pfam_desc)[names(pfam_desc) == "V2"] <- "Desc_redux"
+names(pfam_desc)[names(pfam_desc) == "V3"] <- "Description"
+
+matrix_Pfam <- occurrenceAnnotByOG_Pfam %>%
+  spread(key = Pfam_ID, value = occurenceByOG, fill = 0)
+matrix_Pfam <- as.data.frame(matrix_Pfam)
+rownames(matrix_Pfam) <- matrix_Pfam[,1]
+matrix_Pfam <- select(matrix_Pfam, -'speciesID')
+```
+
+#scaling occurrence for each col
+```{r}
+
+dataCol_zscore_Pfam <- scale(matrix_Pfam)
+id_Gain_Pfam <- read.table('nodesResults_pfam.gain01.tsv', header = TRUE, sep="\t", stringsAsFactors = FALSE)
+id_Loss_Pfam <- read.table('nodesResults_pfam.loss01.tsv', header = TRUE, sep="\t", stringsAsFactors = FALSE)
+
+selected_colsG_Pfam <- dataCol_zscore_Pfam[ ,colnames(dataCol_zscore_Pfam) %in% id_Gain_Pfam$Pfam_ID]
+selected_colsL_Pfam <- dataCol_zscore_Pfam[ ,colnames(dataCol_zscore_Pfam) %in% id_Loss_Pfam$Pfam_ID]
+allSelected_Pfam <- cbind(selected_colsG_Pfam, selected_colsL_Pfam)
+rowOrder <- c("Tracheliastes-polycolpus", "Lepeophtheirus-salmonis", "Caligus-confusus", "Caligus-rogercresseyi", "Caligus-clemensi", "Platychelipus-littoralis", "Tisbe-furcata", "Tigriopus-kingsejongensis", "Tigriopus-japonicus", "Tigriopus-californicus", "Paracyclopina-nana", "Oithona-nana", "Oithona-similis", "Lernaea-cyprinacea", "Apocyclops-royi", "Eucyclops-serrulatus", "Pleuromamma-robusta", "Pleuromamma-abdominalis", "Pleuromamma-xiphias", "Metridia-longa", "Metridia-lucens", "Metridia-pacifica", "Gigantodiaptomus-amblyodon", "Pseudodiaptomus-annandalei", "Eurytemora-carolleeae", "Eurytemora-affinis", "Temora-longicornis", "Temora-stylifera", "Labidocera-madurae", "Acartia-fossae", "Acartia-tonsa", "Acartia-clausii", "Rhincalanus-gigas", "Eucalanus-hyalinus", "Eucalanus-bungii", "Euchaetidae-sp", "Pseudocalanus-sp", "Calanoides-carinatus", "Calanoides-acutus", "Neocalanus-cristatus", "Neocalanus-plumchrus", "Neocalanus-flemingeri", "Calanus-hyperboreus", "Calanus-propinquus", "Calanus-pacificus", "Calanus-sinicus", "Calanus-helgolandicus", "Calanus-finmarchicus", "Calanus-marshallae", "Calanus-glacialis")
+allSelected_Pfam <- allSelected_Pfam[rowOrder, ]
+heatmap.2(allSelected_Pfam, Rowv = NA, scale = "none", trace = "none", dendrogram = "none", cexRow = 0.6,  cexCol = 0.8, srtCol = 40, density.info = "none", key=TRUE, col = colorRampPalette(c("#561645", "white", "#1E7335"))(250), )
+```
+
+#save
+```{bash}
+
+svg("heatmap_GainLoss_Pfam.svg")
+heatmap.2(allSelected_Pfam, Rowv = NA, scale = "none", trace = "none", dendrogram = "none", cexRow = 0.6,  cexCol = 0.8, srtCol = 40, density.info = "none", key=TRUE, col = colorRampPalette(c("#561645", "white", "#1E7335"))(250), )
+dev.off()
+```
