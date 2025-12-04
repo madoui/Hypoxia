@@ -9,6 +9,7 @@ A friendly repository for those who need to acces data and code used in our stud
 7. RaxML contaiins the phylotranstricptomic tree data
    
 If you are using the data available in this github, please cite:
+
 Hypoxia adaptation shapes genomic architecture and vertical niche transitions in copepods
 Kévin Sugier, Romuald Laso-Jadart, Loïc Dorval, Arnaud Meng, Rainer Kiko, Leocadio Blanco-Bercial, Amy E. Maas, Astrid Cornils, Frédéric Maps, Sakina-Dorothée Ayata, Mohammed-Amin Madoui
 bioRxiv 2025.11.05.686523; doi: https://doi.org/10.1101/2025.11.05.686523
